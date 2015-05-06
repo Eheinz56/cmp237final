@@ -1,11 +1,11 @@
-<p>This page turns violet when you hold the V key.</p>
+<p>This page turns violet when you pres the V key and turns back to normal when C is pushed</p>
 <script>
   addEventListener("keydown", function(event) {
     if (event.keyCode == 86)
       document.body.style.background = "violet";
   });
-  addEventListener("keyup", function(event) {
-    if (event.keyCode == 86)
-      document.body.style.background = "";
+  addEventListener("keydown", function(event) {
+    if (event.keyCode == 99)
+      document.body.style.background = "white";
   });
 </script>
